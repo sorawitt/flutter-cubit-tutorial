@@ -3,7 +3,7 @@ import 'package:todo_app/presentations/screens/add_todo_screen.dart';
 import 'package:todo_app/presentations/screens/edit_todo_screen.dart';
 import 'package:todo_app/presentations/screens/todos_screen.dart';
 
-class Router {
+class AppRouter {
   Route generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case "/":
