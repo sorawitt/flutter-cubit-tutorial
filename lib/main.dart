@@ -15,6 +15,7 @@ class TodoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateRoute: router.generateRoute,
       home: TodosScreen(),
     );
   }
