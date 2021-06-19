@@ -8,6 +8,15 @@ class TodosScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Todos"),
+        actions: [
+          InkWell(
+            child: Padding(
+              padding: EdgeInsets.all(10),
+              child: Icon(Icons.add),
+            ),
+            onTap: () => {print("Tap")},
+          )
+        ],
       ),
       body: Center(
         child: Text("Todos Screen"),
