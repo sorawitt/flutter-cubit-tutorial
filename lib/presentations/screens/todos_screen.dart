@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_app/constants/string.dart';
 
 class TodosScreen extends StatelessWidget {
   const TodosScreen({Key key}) : super(key: key);
@@ -14,7 +15,7 @@ class TodosScreen extends StatelessWidget {
               padding: EdgeInsets.all(10),
               child: Icon(Icons.add),
             ),
-            onTap: () => {print("Tap")},
+            onTap: () => {Navigator.pushNamed(context, ADD_TODO_ROUTE)},
           )
         ],
       ),
